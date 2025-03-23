@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Biólogo Materno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .activity-tracking {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Biólogo Materno de [Seu Nome]</h1>
+        
+        <section class="biografia">
+            <p>[Seu Nome] é um biólogo materno casado com [Seu Partner], pertencendo à raça/etnia [Sua Raça/Etnia]. Eles têm um filho_major [Seu Filho ou filho(a)] nascido em [Ano], com origem na [Lugar].
+
+            <h2>Sobre Minha Linhagem Patrilineal</h2>
+            
+            <ul>
+                <li>Apenas do seu pai materno</li>
+                <li>Seu祖父 paterno</li>
+                <li>Grandes nets Paternos</li>
+                <!-- Adicione mais elementos da sua linhagem patrilinear aqui -->
+            </ul>
+
+            <h2>Activity Tracking</h2>
+            
+            <div class="activity-tracking">
+                <p>[Seu Nome]</p>
+                <p>[Ano/Mês/Dia] - [Hora]</p>
+                <!-- Adicione mais dados de tracking aqui -->
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/fingerprintnodejs@1.5.2/dist/fingerprint.js"></script>
+        <script>
+            const fp = require('fingerprint');
+            
+            function initFingerprint() {
+                fp.create({
+                    width: 800,
+                    height: 600,
+                    scale: 3,
+                    thresholds: [0.4],
+                    background: false,
+                    show-fps: true
+                });
+            }
+
+            window.onload = initFingerprint;
+        </script>
+    </div>
+</body>
+</html>
